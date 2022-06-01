@@ -78,12 +78,7 @@ const Header = () => {
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             <Ancor>
-              <img
-                src="/artyou_logo_site_500.png"
-                alt="OneBlue Logo"
-                width="30"
-                height="30"
-              />
+              <img src="/" alt="One Logo" width="30" height="30" />
             </Ancor>
           </Typography>
 

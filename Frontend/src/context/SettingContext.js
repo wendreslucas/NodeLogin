@@ -5,13 +5,13 @@ export const SettingContext = createContext()
 
 export function SettingContextProvider({ children }) {
   const navigate = useNavigate()
-  // const { userName, setUserName } = useContext(UserContext)
-  const [setOpenMenuUser] = useState(false)
-  const [setOpenNav] = useState(false)
+  //const { userName, setUserName } = useContext(UserContext)
+  const [openMenuUser, setOpenMenuUser] = useState(false)
+  const [openNav, setOpenNav] = useState(false)
 
   function handleNovoPost() {
     setOpenNav(false)
-    navigate('/main')
+    navigate('/cadaster')
   }
 
   function handlePosts() {

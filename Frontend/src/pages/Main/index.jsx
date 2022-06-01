@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import Header from '../../components/Headers/Header'
 import HeaderPost from '../../components/Headers/HeaderUser'
-import AddUser from '../../components/AddUser'
+import { AddUser } from '../../components/AddUser'
 import Footer from '../../components/Footer'
 import { StyleMain } from './style'
 
 const Main = () => {
   useEffect(() => {
-    document.title = 'OneBlue | Create User'
+    document.title = 'One | Create User'
   }, [])
   return (
     <>

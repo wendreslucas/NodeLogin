@@ -3,7 +3,7 @@ import { FormLogin } from '../../components/LoginMaterial'
 
 const Login = () => {
   useEffect(() => {
-    document.title = 'OneBlue | Login'
+    document.title = 'One | Login'
   }, [])
 
   return (

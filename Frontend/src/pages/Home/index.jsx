@@ -5,7 +5,7 @@ import { StyleDiv, StyleImage, Imagem } from './style'
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'OneBlue | Home'
+    document.title = 'One | Home'
   }, [])
 
   return (
@@ -13,12 +13,7 @@ const Home = () => {
       <Header />
       <StyleDiv>
         <StyleImage>
-          <Imagem
-            src="/artyou_logo_site_500.png"
-            alt="OneBlue Logo"
-            width="500"
-            height="500"
-          />
+          <Imagem src="/" alt=" Logo" width="500" height="500" />
         </StyleImage>
       </StyleDiv>
       <Footer />

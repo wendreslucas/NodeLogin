@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import { UserModal } from '../../components/UserModal'
+import { AddUser } from './../../components/AddUser'
 
 const Cadaster = () => {
   useEffect(() => {
-    document.title = 'OneBlue | Cadaster'
+    document.title = 'One | Cadaster'
   }, [])
 
   return (
     <>
-      <UserModal />
+      <AddUser />
     </>
   )
 }
