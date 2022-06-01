@@ -1,0 +1,20 @@
+{
+  "name": {
+    "required": "Nome é um campo obrigatório"
+  },
+
+  "email": {
+    "required": "Email é um campo obrigatório",
+    "email": "Email inválido"
+  },
+
+  "password": {
+    "required": "Senha é um campo obrigatório",
+    "min": "Senha deve ter no mínimo 3 caracteres"
+  },
+
+  "confirmPassword": {
+    "required": "Confirmação de senha é um campo obrigatório",
+    "oneOf": "Senhas não conferem"
+  }
+}
