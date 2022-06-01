@@ -115,7 +115,7 @@ export const UserModal = () => {
                   required: 'Campo obrigatório',
                   minLength: {
                     value: 3,
-                    message: 'Mínimo de 3 caracteres'
+                    message: 'Mínimo de 6 caracteres'
                   }
                 }}
                 render={({ field: { onChange, value } }) => (

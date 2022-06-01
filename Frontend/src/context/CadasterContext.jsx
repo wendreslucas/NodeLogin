@@ -12,6 +12,7 @@ export const CadasterContextProvider = ({ children }) => {
     api
       .post('/login', {
         name: req.name,
+        email: req.email,
         password: req.password
       })
       .then(res => {
@@ -26,10 +27,11 @@ export const CadasterContextProvider = ({ children }) => {
   const createUser = async data => {
     const user = {
       name: data.name,
+      email: data.email,
       password: data.password
     }
-
-    const res = await api.post('/user', user)
+    console.log({ data })
+    const res = await api.post('/user/register', user)
 
     if (res.status === 200) {
       toast.error('Ops! Usuário já existe')

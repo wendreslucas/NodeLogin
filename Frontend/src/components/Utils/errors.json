@@ -10,7 +10,7 @@
 
   "password": {
     "required": "Senha é um campo obrigatório",
-    "min": "Senha deve ter no mínimo 3 caracteres"
+    "min": "Senha deve ter no mínimo 6 caracteres"
   },
 
   "confirmPassword": {

@@ -18,9 +18,9 @@ module.exports = {
     if (!name || !email || !password) {
       return res.status(400).json({ error: 'Preencha todos os campos' })
     }
-    if (password !== confirmPassword) {
-      return res.status(400).json({ error: 'As senhas não conferem' })
-    }
+    // if (password !== confirmPassword) {
+    //   return res.status(400).json({ error: 'As senhas não conferem' })
+    // }
     if (password.length < 6) {
       return res
         .status(400)
@@ -29,7 +29,7 @@ module.exports = {
 
     const userExists = await User.findOne({ email })
     if (userExists) {
-      return res.status(400).json({ error: 'Usuário já existe' })
+      return res.status(200).json({ error: 'Usuário já existe' })
     }
 
     // const salt = bcrypt.genSaltSync(10)
