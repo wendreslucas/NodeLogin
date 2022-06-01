@@ -24,6 +24,10 @@ export const DivBtn = styled.div`
   justify-content: space-around;
 `
 
+export const DivInputs = styled.div`
+  width: 270px;
+`
+
 export const DivSpan = styled.div`
   display: flex;
   flex-direction: column;

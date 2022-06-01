@@ -8,18 +8,28 @@ export const CadasterContext = createContext()
 export const CadasterContextProvider = ({ children }) => {
   const navigate = useNavigate()
 
-  function onSubmit(req, res) {
+  const onSubmit = (req, res) => {
     api
-      .post('/login', {
+      .post('/user/authenticate', {
         name: req.name,
         email: req.email,
         password: req.password
       })
       .then(res => {
-        if (res.data.erro) {
-          toast.error('Não foi possível entrar')
-        } else {
-          navigate('/home')
+        localStorage.setItem('token', res.data.token)
+        navigate('/home')
+
+        if (res.status === 200) {
+          toast.success('Login realizado com sucesso!')
+        }
+      })
+      .catch(err => {
+        if (err.response.status === 422) {
+          toast.error('Senha Incorreta!')
+        }
+
+        if (err.response.status === 404) {
+          toast.error('Usuário não encontrado!')
         }
       })
   }
@@ -30,7 +40,7 @@ export const CadasterContextProvider = ({ children }) => {
       email: data.email,
       password: data.password
     }
-    console.log({ data })
+
     const res = await api.post('/user/register', user)
 
     if (res.status === 200) {
