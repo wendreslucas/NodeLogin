@@ -9,16 +9,6 @@ export function SettingContextProvider({ children }) {
   const [openMenuUser, setOpenMenuUser] = useState(false)
   const [openNav, setOpenNav] = useState(false)
 
-  function handleNovoPost() {
-    setOpenNav(false)
-    navigate('/cadaster')
-  }
-
-  function handlePosts() {
-    setOpenNav(false)
-    navigate('/posts')
-  }
-
   function handleHome() {
     setOpenNav(false)
     navigate('/home')
@@ -32,8 +22,6 @@ export function SettingContextProvider({ children }) {
   return (
     <SettingContext.Provider
       value={{
-        handleNovoPost,
-        handlePosts,
         handleHome,
         handleLogout
       }}

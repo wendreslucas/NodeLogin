@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Header from '../../components/Headers/Header'
+import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { StyleDiv, StyleImage, Imagem } from './style'
 
