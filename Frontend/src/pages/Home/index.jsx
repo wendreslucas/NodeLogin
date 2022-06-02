@@ -14,7 +14,7 @@ const Home = () => {
       <StyleDiv>
         <StyleImage>
           <Imagem
-            src="/postcode_logo.svg"
+            src="/postcode_logo_azul.svg"
             alt=" Logo"
             width="500"
             height="500"
