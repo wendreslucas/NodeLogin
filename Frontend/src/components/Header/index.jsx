@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -39,7 +39,6 @@ const useStyles = makeStyles({
 
 const Header = () => {
   const classes = useStyles()
-  const { userName } = useContext(UserContext)
   const {
     handleNovoPost,
     handlePosts,
@@ -166,10 +165,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  alt={userName}
-                  src={`https://github.com/${userName}.png`}
-                />
+                <Avatar alt={name} src={`https://github.com/${name}.png`} />
               </IconButton>
             </Tooltip>
             <Menu
