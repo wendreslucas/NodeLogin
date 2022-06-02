@@ -65,13 +65,14 @@ export const DivSpan = styled.div`
   height: 40px;
 
   a {
-    color: #8c8080;
+    /* color: #8c8080; */
+    color: #36a9e0;
     font-size: 12px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      opacity: 0.2;
+      opacity: 0.7;
     }
   }
 `
