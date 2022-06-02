@@ -8,7 +8,7 @@ import Logo from '../Logo'
 import InputUsername from '../Inputs/Username'
 import InputPassword from '../Inputs/Senha'
 import Button from '../Buttons/Button'
-import { CadasterContext } from '../../context/CadasterContext'
+import { CadasterContext } from '../../context/RegisterContext'
 import { InputError } from '../Inputs/Error'
 import { toast } from 'react-toastify'
 

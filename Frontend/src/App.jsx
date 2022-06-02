@@ -14,9 +14,11 @@ function App() {
       <SettingContextProvider>
         <UserContextProvider>
           <CadasterContextProvider>
-            <GlobalStyle />
-            <PagesRoot />
-            <ToastContainer />
+            <LoginContext>
+              <GlobalStyle />
+              <PagesRoot />
+              <ToastContainer />
+            </LoginContext>
           </CadasterContextProvider>
         </UserContextProvider>
       </SettingContextProvider>
