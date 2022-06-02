@@ -8,7 +8,7 @@ import Logo from '../Logo'
 import InputUsername from '../Inputs/Username'
 import InputPassword from '../Inputs/Senha'
 import Button from '../Buttons/Button'
-import { CadasterContext } from '../../context/RegisterContext'
+import { LoginContext } from '../../context/LoginContext'
 import { InputError } from '../Inputs/Error'
 import { toast } from 'react-toastify'
 
@@ -19,7 +19,7 @@ const validationSchema = yup.object({
 
 export const FormLogin = () => {
   const navigate = useNavigate()
-  const { onSubmit } = React.useContext(CadasterContext)
+  const { onSubmit } = React.useContext(LoginContext)
 
   function handleCreate() {
     navigate('/cadaster')

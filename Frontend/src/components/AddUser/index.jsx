@@ -14,7 +14,7 @@ import InputUsername from '../Inputs/Username'
 import InputPassword from '../Inputs/Senha'
 import { IoClose } from 'react-icons/io5'
 import Logo from '../Logo'
-import { CadasterContext } from '../../context/CadasterContext'
+import { LoginContext } from '../../context/LoginContext'
 import { useForm, Controller } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -32,7 +32,7 @@ const validationSchema = yup.object({
 export const AddUser = () => {
   const { register } = useForm()
   const navigate = useNavigate()
-  const { createUser } = React.useContext(CadasterContext)
+  const { createUser } = React.useContext(LoginContext)
 
   function handleClose() {
     navigate('/')

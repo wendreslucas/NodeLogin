@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { CadasterContextProvider } from './context/CadasterContext'
+import { LoginContextProvider } from './context/LoginContext'
 import { SettingContextProvider } from './context/SettingContext'
 import { UserContextProvider } from './context/UserContext'
 import { PagesRoot } from './pages/Root'
@@ -13,13 +13,11 @@ function App() {
     <BrowserRouter>
       <SettingContextProvider>
         <UserContextProvider>
-          <CadasterContextProvider>
-            <LoginContext>
-              <GlobalStyle />
-              <PagesRoot />
-              <ToastContainer />
-            </LoginContext>
-          </CadasterContextProvider>
+          <LoginContextProvider>
+            <GlobalStyle />
+            <PagesRoot />
+            <ToastContainer />
+          </LoginContextProvider>
         </UserContextProvider>
       </SettingContextProvider>
     </BrowserRouter>
