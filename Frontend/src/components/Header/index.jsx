@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
-import { UserContext } from '../../context/UserContext'
 import { SettingContext } from '../../context/SettingContext'
 import { Ancor } from './style'
 import { makeStyles } from '@material-ui/styles'
@@ -165,7 +164,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt={name} src={`https://github.com/${name}.png`} />
+                <Avatar alt="Usuario" />
               </IconButton>
             </Tooltip>
             <Menu
