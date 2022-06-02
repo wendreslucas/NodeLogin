@@ -6,17 +6,18 @@ const DivLogo = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 80px;
 `
 
-const Logo = () => {
+const Logo = props => {
+  const { width, height } = props
   return (
     <DivLogo>
       <img
         alt="logo da empresa"
-        src="/artyou_logo_site_500.png"
-        width={'100'}
-        height={'100'}
+        src="/postcode_logo_azul.svg"
+        width={width}
+        height={height}
       />
     </DivLogo>
   )

@@ -40,7 +40,7 @@ export const FormLogin = () => {
   return (
     <Container>
       <StyleForm onSubmit={handleSubmit(onSubmit)}>
-        <Logo />
+        <Logo height={'50px'} width={'100px'} />
         <DivBtn>
           <DivInputs>
             <Controller

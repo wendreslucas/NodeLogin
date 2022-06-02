@@ -59,7 +59,7 @@ export const AddUser = () => {
       <Container>
         <StyleForm onSubmit={handleSubmit(onSubmit, onError)}>
           <DivHeader>
-            <Logo />
+            <Logo width={'100px'} height={'50px'} />
             <button className="btn" onClick={handleClose}>
               <IoClose />
             </button>

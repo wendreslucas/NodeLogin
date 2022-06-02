@@ -78,7 +78,12 @@ const Header = () => {
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             <Ancor>
-              <img src="/" alt="One Logo" width="30" height="30" />
+              <img
+                src="/postcode_logo_azul.svg"
+                alt="Postcode Logo"
+                width="130"
+                height="30"
+              />
             </Ancor>
           </Typography>
 
@@ -130,8 +135,8 @@ const Header = () => {
           >
             <Ancor>
               <img
-                src="/artyou_logo_site_500.png"
-                alt="OneBlue Logo"
+                src="/postcode_logo_azul.svg"
+                alt="Postcode Logo"
                 width="80"
                 height="30"
               />

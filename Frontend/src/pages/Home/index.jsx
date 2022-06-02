@@ -13,7 +13,12 @@ const Home = () => {
       <Header />
       <StyleDiv>
         <StyleImage>
-          <Imagem src="/" alt=" Logo" width="500" height="500" />
+          <Imagem
+            src="/postcode_logo.svg"
+            alt=" Logo"
+            width="500"
+            height="500"
+          />
         </StyleImage>
       </StyleDiv>
       <Footer />

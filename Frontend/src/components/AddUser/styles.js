@@ -42,7 +42,7 @@ export const StyleForm = styled.form`
   flex-direction: column;
   width: 450px;
   height: 500px;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 `
 export const DivBtn = styled.div`
@@ -62,6 +62,7 @@ export const DivSpan = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 40px;
 
   a {
     color: #8c8080;
