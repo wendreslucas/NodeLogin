@@ -27,9 +27,14 @@ module.exports = {
         .json({ error: 'A senha deve ter no mínimo 6 caracteres' })
     }
 
-    const userExists = await User.findOne({ email })
-    if (userExists) {
-      return res.status(200).json({ error: 'Usuário já existe' })
+    const emailExist = await User.findOne({ email: email })
+    if (emailExist) {
+      return res.status(400).json({ error: 'Esse Email já existe' })
+    }
+
+    const nameExist = await User.findOne({ name: name })
+    if (nameExist) {
+      return res.status(404).json({ error: 'Esse Username já existe' })
     }
 
     // const salt = bcrypt.genSaltSync(10)
@@ -50,15 +55,15 @@ module.exports = {
   },
 
   async login(req, res) {
-    const { email, password } = req.body
+    const { name, password } = req.body
 
-    if (!email || !password) {
+    if (!name || !password) {
       return res.status(400).json({ error: 'Preencha todos os campos' })
     }
 
-    const user = await User.findOne({ email: email })
+    const user = await User.findOne({ name: name })
     if (!user) {
-      return res.status(404).json({ error: 'Usuário não existe' })
+      return res.status(404).json({ error: 'Usuário não encontrado' })
     }
 
     // const checkPassword = bcrypt.compareSync(password, user.password)

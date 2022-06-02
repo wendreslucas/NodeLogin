@@ -12,7 +12,7 @@ export const CadasterContextProvider = ({ children }) => {
     api
       .post('/user/authenticate', {
         name: req.name,
-        email: req.email,
+        // email: req.email,
         password: req.password
       })
       .then(res => {
