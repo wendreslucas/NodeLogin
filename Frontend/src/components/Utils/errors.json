@@ -1,6 +1,6 @@
 {
   "name": {
-    "required": "Nome é um campo obrigatório"
+    "required": "Username é um campo obrigatório"
   },
 
   "email": {
