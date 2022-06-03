@@ -11,11 +11,12 @@ export function SettingContextProvider({ children }) {
 
   function handleHome() {
     setOpenNav(false)
-    navigate('/home')
+    // navigate('/home')
   }
 
   function handleLogout() {
     setOpenMenuUser(false)
+    localStorage.removeItem('token')
     navigate('/')
   }
 
